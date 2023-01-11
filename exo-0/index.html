@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <h1>Exercice 0</h1>
+
+        <script type="text/javascript">
+
+        /* Section 1 */
+
+        // je déclare une variable nommée name qui prend pour valeur la chaine de caractère Joe.
+        var name = "Joe";
+        // je déclare une variable nommée city qui prend pour valeur la chaine de caractère London.
+        var city = 'London';
+        // je déclare une variable nommée age qui prend pour valeur l'entier 32.
+        var age = 32;
+        // je déclare une variable nommée isRed qui prend pour valeur le booléen true.
+        var isRed = true;
+        // je déclare une variable nommée isOld qui prend pour valeur la variable age qui dit être plus grande que l'entier 80.
+        var isOld = age > 80;
+
+        // je déclare une variable nommée previousJobs qui prend pour valeur un tableau possédant trois éléments.
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+
+        // je déclare une fonction nommée info qui prend deux paramètres.
+        function info(height, weight) {
+            // je déclare une condition disant que si mon paramètre height est strictement plus grand que l'entier 180 alors j'affiche un message.
+            if (height > 180) {
+                console.log('Vous êtes grand');
+            }
+            // je déclare une condition disant que si mon paramètre weight est strictement plus petit que l'entier 0 alors j'affiche un message.
+            if (weight < 0) {
+                console.log('oups, there is a problem');
+            // et si mon paramètre weight est strictement plus petit que l'entier 15 alors j'affiche un autre message.
+            } else if ( weight < 15) {
+                console.log('Are you that slim ?')
+            // sinon j'affiche encore un autre message.
+            } else {
+                console.log('Good !')
+            }
+        }
+
+        // j'appelle ma fonction et je lui donne les paramètres l'entier 165 pour height et 86 pour weight.
+        info(165, 45);
+
+        // je déclare une variable nommée myHeight qui prend pour valeur l'entier 175.
+        var myHeight = 175;
+        // je déclare une variable nommée myWeight qui prend pour valeur l'entier 86.
+        var myWeight = 86;
+
+        // j'appelle ma fonction et je lui donne les paramètres la variable myHeight et myWeight.
+        info(myHeight, myWeight);
+
+        // j'appelle ma fonction et je lui donne les paramètres la variable myHeight à laquelle j'additionne 15 et myWeight à laquelle je soustrais 100.
+        info(myHeight + 15, myWeight - 100);
+
+        // je déclare une fonction nommée toUpper qui un paramètre.
+        function toUpper(variable) {
+            // la fonction retourne le paramètre ayant subi la modification de la méthode toUpperCase
+            return variable.toUpperCase();
+        }
+        // je déclare une variable nommée upperName qui prend pour valeur la méthode toUpper qui aura un paramètre.
+        var upperName = toUpper(name);
+
+        // je crée une boucle for dans laquelle je la variable i et en l'initialisant à 0. Elle vérifie que i est inférieur (strictement) à 3
+        // et exécute ensuite les deux instructions contenues dans la boucle, ensuite elle incrémente i de 1, ce qui sera fait à chaque passage dans la boucle.
+        for (i = 0; i < 3; i = i + 1) {
+            // la boucle affichera tous les éléments du tableau contenu dans ma variable
+            console.log(previousJobs[i]);
+        }
+
+        /* Section 2: */
+
+        // afficher la ville dans laquele Joe vit.     
+
+        // afficher si Joe est roux ou pas.
+
+        /* Section 3 */
+
+        console.log(myVariable);
+
+        </script>
+
+    </body>
+</html>
